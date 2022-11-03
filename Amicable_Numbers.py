@@ -1,15 +1,12 @@
-a=int(input())
-b=int(input())
-s1=0
-s2=0
-for i in range (1,a+1):
-    if a%i==0:
-        s1+=i
-for i in range(1,b+1):
-    if b%i==0:
-        s2+=i
-if s1==s2 or s2==s1:
+def amicable(n):
+    s=0
+    for i in range(1,n+1):
+        if n%i==0:
+            s+=i
+    return s
+n=int(input())
+m=int(input())
+if amicable(n)==amicable(m):
     print('Amicable')
 else:
     print('Not Amicable')
-
