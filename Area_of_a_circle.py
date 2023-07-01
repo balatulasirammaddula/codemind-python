@@ -1,3 +1,3 @@
-n=int(input())
-a=3.14*n**2
-print(a)
+a=int(input())
+r=a*a*3.14
+print('{:.2f}'.format(r))
